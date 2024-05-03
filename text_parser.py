@@ -6,7 +6,7 @@ from word2num import numbers
 
 
 # Load resources
-tokenizer = re.compile('[A-Za-z]+?(?=[ABCDE])|[A-Za-z]+|\d+')
+tokenizer = re.compile(r'[A-Za-z]+?(?=[ABCDE])|[A-Za-z]+|\d+')
 
 file = open("stopwords.txt", "r")
 stopwords = file.read().splitlines()
